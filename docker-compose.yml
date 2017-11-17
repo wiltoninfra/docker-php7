@@ -74,7 +74,7 @@ services:
     comandos:
       build: 
         context: .
-        dockerfile: Dockerfile-nodejs
+        dockerfile: Dockerfile-comandos
       container_name: comandos  
       volumes:
        - "./dev:/var/www/html/"

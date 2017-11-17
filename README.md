@@ -79,5 +79,11 @@ docker exec -it comandos composer create-project --prefer-dist laravel/laravel /
 
 > **Note:**
 Seu laravel esta pronto para uso seu repositório de arquivos na pasta DEV.
+Para executar os comandos acesse o conteiner comandos.
 
+``` sh
+docker exec -it comandos /bin/bash
+
+```
+Você ira acessar o servidor linux com todos os comandos já instalados.
 
