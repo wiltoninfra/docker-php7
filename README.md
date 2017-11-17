@@ -1,12 +1,15 @@
-﻿# DOCKER AMBIENTE DE DESENVOLVIMENTO MULTI-PLATAFORM #
+
+
+# DOCKER AMBIENTE DE DESENVOLVIMENTO MULTI-PLATAFORM #
 ## Serviços PHP 7.1.11 /  Nginx 1.13.x + Phpmyadmin + Mysql-Server 5.7 + Redis + MongoDB
+
+[![build status](https://travis-ci.org/wiltoninfra/docker-php7.svg?branch=master)](https://circleci.com/gh/docker/cli/tree/master) [![Build Status]
 
 Este script foi criado principalmente para rodar em ambientes Windows com VirtualBox, mas funciona normlamente em outras plataformas
 
 ### Padronização ###
 
 Criamos uma estrutura de pastas a fim de facilitar o entendimento e desenvolvimento local utilizando docker:
-
 
 | Pasta | Descrição |
 | ------ | ------ |
