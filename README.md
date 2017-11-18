@@ -74,13 +74,9 @@ Após terminar o Build realize os testes e veja se seu ambiente esta funcionando
 
 Abra o console do docker e execute o comando abaixo na pasta raiz do docker
 
-``` sh
-docker exec -it comandos composer create-project --prefer-dist laravel/laravel /var/www/html/app && cd /var/www/html/app && composer update && composer install && composer dump
-```
 
 > **Note:**
-Seu laravel esta pronto para uso seu repositório de arquivos na pasta DEV.
-Para executar os comandos acesse o conteiner comandos.
+Utilize o container, "comandos" para executar "Composer", "Gulp" dentre outros comandos via CLI.
 
 ``` sh
 docker exec -it comandos /bin/bash
