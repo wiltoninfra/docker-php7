@@ -1,0 +1,44 @@
+# Logfile created on 2018-01-17 03:13:07 +0000 by logger.rb/56438
+[2018-01-17T03:13:07+00:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /opt/gitlab/embedded
+  One version per cookbook
+
+[2018-01-17T03:13:07+00:00] INFO: Forking chef instance to converge...
+[2018-01-17T03:13:07+00:00] INFO: *** Chef 12.12.15 ***
+[2018-01-17T03:13:07+00:00] INFO: Platform: x86_64-linux
+[2018-01-17T03:13:07+00:00] INFO: Chef-client pid: 32
+[2018-01-17T03:13:08+00:00] WARN: unable to detect ipaddress
+[2018-01-17T03:13:08+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: chefzero://localhost:8889/nodes/172.38.1.10
+[2018-01-17T03:13:09+00:00] INFO: Setting the run_list to ["recipe[gitlab]"] from CLI options
+[2018-01-17T03:13:09+00:00] INFO: Run List is [recipe[gitlab]]
+[2018-01-17T03:13:09+00:00] INFO: Run List expands to [gitlab]
+[2018-01-17T03:13:09+00:00] INFO: Starting Chef Run for 172.38.1.10
+[2018-01-17T03:13:09+00:00] INFO: Running start handlers
+[2018-01-17T03:13:09+00:00] INFO: Start handlers complete.
+[2018-01-17T03:13:09+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2018-01-17T03:13:09+00:00] INFO: Loading cookbooks [gitlab@0.0.1, package@0.1.0, registry@0.1.0, mattermost@0.1.0, consul@0.0.0, gitaly@0.1.0, runit@0.14.2]
+[2018-01-17T03:13:11+00:00] WARN: Runtime directory '/run' is not a tmpfs.
+[2018-01-17T03:13:11+00:00] INFO: directory[/etc/gitlab] owner changed to 0
+[2018-01-17T03:13:11+00:00] INFO: directory[/etc/gitlab] group changed to 0
+[2018-01-17T03:13:11+00:00] INFO: directory[/etc/gitlab] mode changed to 775
+[2018-01-17T03:13:11+00:00] WARN: Skipped selecting an init system because it looks like we are running in a container
+[2018-01-17T03:13:11+00:00] INFO: directory[Create /var/opt/gitlab] owner changed to 0
+[2018-01-17T03:13:11+00:00] INFO: directory[Create /var/opt/gitlab] group changed to 0
+[2018-01-17T03:13:11+00:00] INFO: directory[Create /var/opt/gitlab] mode changed to 755
+[2018-01-17T03:13:11+00:00] INFO: template[/var/opt/gitlab/.gitconfig] owner changed to 998
+[2018-01-17T03:13:11+00:00] INFO: template[/var/opt/gitlab/.gitconfig] group changed to 998
+[2018-01-17T03:13:11+00:00] INFO: template[/var/opt/gitlab/.gitconfig] mode changed to 644
+[2018-01-17T03:13:11+00:00] INFO: Running queued delayed notifications before re-raising exception
+[2018-01-17T03:13:11+00:00] INFO: Running queued delayed notifications before re-raising exception
+[2018-01-17T03:13:11+00:00] ERROR: Running exception handlers
+[2018-01-17T03:13:11+00:00] ERROR: Exception handlers complete
+[2018-01-17T03:13:11+00:00] FATAL: Stacktrace dumped to /opt/gitlab/embedded/cookbooks/cache/chef-stacktrace.out
+[2018-01-17T03:13:11+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-01-17T03:13:11+00:00] ERROR: storage_directory[/var/opt/gitlab/git-data] (gitlab::gitlab-shell line 35) had an error: Mixlib::ShellOut::ShellCommandFailed: ruby_block[directory resource: /var/opt/gitlab/git-data] (/opt/gitlab/embedded/cookbooks/cache/cookbooks/package/resources/storage_directory.rb line 33) had an error: Mixlib::ShellOut::ShellCommandFailed: Failed asserting that ownership of "/var/opt/gitlab/git-data" was git
+---- Begin output of set -x && [ "$(stat --printf='%U' $(readlink -f /var/opt/gitlab/git-data))" = 'git' ] ----
+STDOUT: 
+STDERR: + readlink -f /var/opt/gitlab/git-data
++ stat --printf=%U /var/opt/gitlab/git-data
++ [ UNKNOWN = git ]
+---- End output of set -x && [ "$(stat --printf='%U' $(readlink -f /var/opt/gitlab/git-data))" = 'git' ] ----
+Ran set -x && [ "$(stat --printf='%U' $(readlink -f /var/opt/gitlab/git-data))" = 'git' ] returned 1
+[2018-01-17T03:13:11+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)

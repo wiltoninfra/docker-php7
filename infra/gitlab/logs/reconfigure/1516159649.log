@@ -1,0 +1,34 @@
+# Logfile created on 2018-01-17 03:27:29 +0000 by logger.rb/56438
+[2018-01-17T03:27:30+00:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /opt/gitlab/embedded
+  One version per cookbook
+
+[2018-01-17T03:27:30+00:00] INFO: Forking chef instance to converge...
+[2018-01-17T03:27:30+00:00] INFO: *** Chef 12.12.15 ***
+[2018-01-17T03:27:30+00:00] INFO: Platform: x86_64-linux
+[2018-01-17T03:27:30+00:00] INFO: Chef-client pid: 32
+[2018-01-17T03:27:31+00:00] WARN: unable to detect ipaddress
+[2018-01-17T03:27:31+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: chefzero://localhost:8889/nodes/172.38.1.10
+[2018-01-17T03:27:31+00:00] INFO: Setting the run_list to ["recipe[gitlab]"] from CLI options
+[2018-01-17T03:27:31+00:00] INFO: Run List is [recipe[gitlab]]
+[2018-01-17T03:27:31+00:00] INFO: Run List expands to [gitlab]
+[2018-01-17T03:27:31+00:00] INFO: Starting Chef Run for 172.38.1.10
+[2018-01-17T03:27:31+00:00] INFO: Running start handlers
+[2018-01-17T03:27:31+00:00] INFO: Start handlers complete.
+[2018-01-17T03:27:31+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2018-01-17T03:27:32+00:00] INFO: Loading cookbooks [gitlab@0.0.1, package@0.1.0, registry@0.1.0, mattermost@0.1.0, consul@0.0.0, gitaly@0.1.0, runit@0.14.2]
+[2018-01-17T03:27:33+00:00] WARN: Runtime directory '/run' is not a tmpfs.
+[2018-01-17T03:27:33+00:00] WARN: Skipped selecting an init system because it looks like we are running in a container
+[2018-01-17T03:27:33+00:00] INFO: directory[/var/log/gitlab/gitlab-shell/] owner changed to 998
+[2018-01-17T03:27:33+00:00] INFO: directory[/var/log/gitlab/gitlab-shell/] mode changed to 700
+[2018-01-17T03:27:33+00:00] INFO: execute[/opt/gitlab/embedded/service/gitlab-shell/bin/gitlab-keys check-permissions] ran successfully
+[2018-01-17T03:27:33+00:00] INFO: directory[/var/log/gitlab] owner changed to 998
+[2018-01-17T03:27:33+00:00] INFO: directory[/var/log/gitlab] mode changed to 755
+[2018-01-17T03:27:34+00:00] INFO: directory[create /var/log/gitlab/gitlab-rails] owner changed to 998
+[2018-01-17T03:27:34+00:00] INFO: directory[create /var/log/gitlab/gitlab-rails] mode changed to 700
+[2018-01-17T03:27:34+00:00] INFO: Running queued delayed notifications before re-raising exception
+[2018-01-17T03:27:34+00:00] ERROR: Running exception handlers
+[2018-01-17T03:27:34+00:00] ERROR: Exception handlers complete
+[2018-01-17T03:27:34+00:00] FATAL: Stacktrace dumped to /opt/gitlab/embedded/cookbooks/cache/chef-stacktrace.out
+[2018-01-17T03:27:34+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-01-17T03:27:34+00:00] ERROR: link[/var/log/gitlab/gitlab-rails/sidekiq.log] (gitlab::gitlab-rails line 332) had an error: Errno::EPROTO: Protocol error @ rb_file_s_symlink - (/var/log/gitlab/sidekiq/current, /var/log/gitlab/gitlab-rails/sidekiq.log)
+[2018-01-17T03:27:34+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)

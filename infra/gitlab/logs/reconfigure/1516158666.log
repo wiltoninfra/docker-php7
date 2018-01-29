@@ -1,0 +1,307 @@
+# Logfile created on 2018-01-17 03:11:06 +0000 by logger.rb/56438
+[2018-01-17T03:11:07+00:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /opt/gitlab/embedded
+  One version per cookbook
+
+[2018-01-17T03:11:07+00:00] INFO: Forking chef instance to converge...
+[2018-01-17T03:11:07+00:00] INFO: *** Chef 12.12.15 ***
+[2018-01-17T03:11:07+00:00] INFO: Platform: x86_64-linux
+[2018-01-17T03:11:07+00:00] INFO: Chef-client pid: 31
+[2018-01-17T03:11:08+00:00] WARN: unable to detect ipaddress
+[2018-01-17T03:11:08+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: chefzero://localhost:8889/nodes/172.38.1.10
+[2018-01-17T03:11:08+00:00] INFO: Setting the run_list to ["recipe[gitlab]"] from CLI options
+[2018-01-17T03:11:08+00:00] INFO: Run List is [recipe[gitlab]]
+[2018-01-17T03:11:08+00:00] INFO: Run List expands to [gitlab]
+[2018-01-17T03:11:08+00:00] INFO: Starting Chef Run for 172.38.1.10
+[2018-01-17T03:11:08+00:00] INFO: Running start handlers
+[2018-01-17T03:11:08+00:00] INFO: Start handlers complete.
+[2018-01-17T03:11:08+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2018-01-17T03:11:09+00:00] INFO: Loading cookbooks [gitlab@0.0.1, package@0.1.0, registry@0.1.0, mattermost@0.1.0, consul@0.0.0, gitaly@0.1.0, runit@0.14.2]
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/resources/postgresql_user.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/sidekiq_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/postgresql_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/web-server.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/nginx.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/bootstrap_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/postgres-exporter_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/prometheus_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/resources/postgresql_database.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/postgresql_user.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/gitlab-healthcheck.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/gitlab-pages_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/database_migrations.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/sidekiq.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/show_config.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/logrotate.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/gitlab-rails.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/node-exporter.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/gitlab-monitor.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/mailroom_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/users.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/remote-syslog.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/selinux.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/logrotate_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/nginx_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/postgresql-bin.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/gitlab-workhorse_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/prometheus.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/gitlab-pages.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/gitlab-workhorse.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/unicorn_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/default.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/postgresql.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/prometheus_user.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/gitlab-prometheus.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/storage-check_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/storage-check.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/redis-exporter_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/unicorn.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/node-exporter_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/postgres-exporter.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/redis-exporter.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/bootstrap.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/gitlab-monitor_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/definitions/unicorn_service.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/definitions/sidekiq_service.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/config.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/redis.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/add_trusted_certs.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/redis_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/mailroom.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/registry.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/nginx.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/remote-syslog_disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/gitlab_rails.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/prometheus.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/gitlab_shell.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/postgresql.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/gitlab_workhorse.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/gitlab-shell.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/redis_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/gitlab_mattermost.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/gitlab_pages.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/definitions/unicorn_config.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/prometheus_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/helpers/pg_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/definitions/redis_service.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/incoming_email.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/unicorn.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/logrotate_folders_and_configs.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/attributes/default.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-mailroom-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-remote-syslog-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/nginx-gitlab-pages-http.conf.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-storage-check-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/redis_uri.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/helpers/geo_pg_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/storage_check.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/logging.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/recipes/remove_accounts.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/redis.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/gitconfig-system.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/gitlab.yml.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-mailroom-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/gitlab-rails-rc.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/nginx-gitlab-http.conf.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/postgresql.conf.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/redis.conf.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-nginx-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-node-exporter-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/helpers/authorizer_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-logrotate-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-prometheus-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-unicorn-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-gitlab-pages-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/secret_token.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-redis-exporter-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-redis-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-logrotate-control-t.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-postgresql-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/account_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/libraries/helpers/base_pg_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/aws.yml.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-logrotate-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-unicorn-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-redis-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-postgres-exporter-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-gitlab-pages-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-sidekiq-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-nginx-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-logrotate-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-gitlab-pages-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/workhorse-config.toml.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-nginx-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-sidekiq-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-node-exporter-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/logrotate.conf.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-remote-syslog-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/resque.yml.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/gitconfig.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/smtp_settings.rb.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-sidekiq-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/gitlab-psql-rc.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-redis-exporter-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-unicorn-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/make_metrics_rundir.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-gitlab-workhorse-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/nginx-status.conf.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/database.yml.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-mailroom-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/gitlab-monitor.yml.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-prometheus-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-storage-check-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-postgres-exporter-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/gitlab-rails-error.html.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/nginx.conf.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/gitlab-healthcheck-rc.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/unicorn.rb.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/logrotate-service.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-postgresql-control-t.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/rack_attack.rb.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-gitlab-monitor-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/pg_ident.conf.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-postgres-exporter-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-node-exporter-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/postgresql-init.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/postgresql-runtime.conf.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/nginx-gitlab-registry-http.conf.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/nginx-gitlab-mattermost-http.conf.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-gitlab-monitor-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-remote-syslog-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/postgres-queries.yaml in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-gitlab-workhorse-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-unicorn-control-t.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-redis-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-gitlab-monitor-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-redis-exporter-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-postgresql-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-prometheus-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-storage-check-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/secrets.yml.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/mount_point_check.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-mailroom-finish.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-gitlab-workhorse-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/sv-postgresql-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/resources/env_dir.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/pg_hba.conf.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/README.md in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/remote_syslog.yml.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/metadata.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/resources/storage_directory.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/resources/templatesymlink.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/resources/account.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/gitlab/templates/default/gitlab-shell-config.yml.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/resources/sysctl.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/handlers/gitlab.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/config/services.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/config/roles/application.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/config/roles/redis_sentinel.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/storage_directory_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/config/roles/geo_secondary.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/config/gitlab.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/config/roles/geo_primary.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/config/roles/consul.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/config/roles/pgbouncer.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/config/roles/default.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/formatters/gitlab.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/config/roles/postgres.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/config/roles/redis_master.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/helpers/services_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/matchers.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/config_mash.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/helpers/redhat_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/omnibus_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/helpers/settings_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/helpers/roles_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/helpers/logging_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/helpers/secrets_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/certificate_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/helpers/quote_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/helpers/shell_out_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/libraries/helpers/version_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/attributes/default.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/registry/recipes/enable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/registry/metadata.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/registry/recipes/disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/mattermost/attributes/default.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/registry/templates/default/sv-registry-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/registry/attributes/default.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/registry/templates/default/registry-config.yml.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/registry/templates/default/sv-registry-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/package/metadata.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/mattermost/libraries/mattermost_helper.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/mattermost/recipes/disable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/registry/templates/default/sv-registry-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/mattermost/templates/default/sv-mattermost-log-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/mattermost/recipes/enable.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/mattermost/templates/default/sv-mattermost-run.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/mattermost/templates/default/sv-mattermost-log-config.erb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/mattermost/metadata.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/consul/recipes/enable_daemon.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/consul/attributes/default.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/consul/recipes/service_postgresql.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/consul/recipes/watchers.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/consul/recipes/enable.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/consul/templates/default/watcher_scripts/failover_pgbouncer.erb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/consul/libraries/consul_helper.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/consul/recipes/disable_daemon.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/consul/attributes/watchers.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/consul/attributes/services.rb in the cache.
+[2018-01-17T03:11:09+00:00] INFO: Storing updated cookbooks/mattermost/templates/default/config.json.erb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/gitaly/templates/default/sv-gitaly-log-run.erb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/consul/templates/default/sv-consul-run.erb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/consul/recipes/disable.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/gitaly/metadata.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/runit/recipes/systemd.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/gitaly/recipes/disable.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/gitaly/attributes/default.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/gitaly/libraries/gitaly.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/gitaly/templates/default/sv-gitaly-log-config.erb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/consul/templates/default/sv-consul-log-config.erb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/gitaly/templates/default/gitaly-config.toml.erb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/runit/files/default/gitlab-runsvdir.conf in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/consul/templates/default/sv-consul-log-run.erb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/gitaly/recipes/enable.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/runit/recipes/upstart.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/runit/recipes/default.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/runit/recipes/sysvinit.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/runit/attributes/default.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/runit/definitions/runit_service.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/runit/files/default/gitlab-runsvdir.service in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/gitaly/templates/default/sv-gitaly-run.erb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/runit/metadata.rb in the cache.
+[2018-01-17T03:11:10+00:00] INFO: Storing updated cookbooks/runit/README.md in the cache.
+[2018-01-17T03:11:11+00:00] WARN: Runtime directory '/run' is not a tmpfs.
+[2018-01-17T03:11:11+00:00] INFO: directory[/etc/gitlab] owner changed to 0
+[2018-01-17T03:11:11+00:00] INFO: directory[/etc/gitlab] group changed to 0
+[2018-01-17T03:11:11+00:00] INFO: directory[/etc/gitlab] mode changed to 775
+[2018-01-17T03:11:11+00:00] WARN: Skipped selecting an init system because it looks like we are running in a container
+[2018-01-17T03:11:12+00:00] INFO: directory[Create /var/opt/gitlab] owner changed to 0
+[2018-01-17T03:11:12+00:00] INFO: directory[Create /var/opt/gitlab] group changed to 0
+[2018-01-17T03:11:12+00:00] INFO: directory[Create /var/opt/gitlab] mode changed to 755
+[2018-01-17T03:11:12+00:00] INFO: directory[/opt/gitlab/embedded/etc] created directory /opt/gitlab/embedded/etc
+[2018-01-17T03:11:12+00:00] INFO: directory[/opt/gitlab/embedded/etc] owner changed to 0
+[2018-01-17T03:11:12+00:00] INFO: directory[/opt/gitlab/embedded/etc] group changed to 0
+[2018-01-17T03:11:12+00:00] INFO: directory[/opt/gitlab/embedded/etc] mode changed to 755
+[2018-01-17T03:11:12+00:00] INFO: template[/opt/gitlab/embedded/etc/gitconfig] created file /opt/gitlab/embedded/etc/gitconfig
+[2018-01-17T03:11:12+00:00] INFO: template[/opt/gitlab/embedded/etc/gitconfig] updated file contents /opt/gitlab/embedded/etc/gitconfig
+[2018-01-17T03:11:12+00:00] INFO: template[/opt/gitlab/embedded/etc/gitconfig] mode changed to 755
+[2018-01-17T03:11:12+00:00] INFO: template[/var/opt/gitlab/.gitconfig] owner changed to 998
+[2018-01-17T03:11:12+00:00] INFO: template[/var/opt/gitlab/.gitconfig] group changed to 998
+[2018-01-17T03:11:12+00:00] INFO: template[/var/opt/gitlab/.gitconfig] mode changed to 644
+[2018-01-17T03:11:12+00:00] INFO: Running queued delayed notifications before re-raising exception
+[2018-01-17T03:11:12+00:00] INFO: Running queued delayed notifications before re-raising exception
+[2018-01-17T03:11:12+00:00] ERROR: Running exception handlers
+[2018-01-17T03:11:12+00:00] ERROR: Exception handlers complete
+[2018-01-17T03:11:12+00:00] FATAL: Stacktrace dumped to /opt/gitlab/embedded/cookbooks/cache/chef-stacktrace.out
+[2018-01-17T03:11:12+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-01-17T03:11:12+00:00] ERROR: storage_directory[/var/opt/gitlab/git-data] (gitlab::gitlab-shell line 35) had an error: Mixlib::ShellOut::ShellCommandFailed: ruby_block[directory resource: /var/opt/gitlab/git-data] (/opt/gitlab/embedded/cookbooks/cache/cookbooks/package/resources/storage_directory.rb line 33) had an error: Mixlib::ShellOut::ShellCommandFailed: Failed asserting that ownership of "/var/opt/gitlab/git-data" was git
+---- Begin output of set -x && [ "$(stat --printf='%U' $(readlink -f /var/opt/gitlab/git-data))" = 'git' ] ----
+STDOUT: 
+STDERR: + readlink -f /var/opt/gitlab/git-data
++ stat --printf=%U /var/opt/gitlab/git-data
++ [ UNKNOWN = git ]
+---- End output of set -x && [ "$(stat --printf='%U' $(readlink -f /var/opt/gitlab/git-data))" = 'git' ] ----
+Ran set -x && [ "$(stat --printf='%U' $(readlink -f /var/opt/gitlab/git-data))" = 'git' ] returned 1
+[2018-01-17T03:11:12+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)

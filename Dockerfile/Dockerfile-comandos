@@ -37,7 +37,6 @@ php-curl                                  \
 php-db                                    \
 php-dba                                   \
 php-fpdf                                  \
-php-fpm                                   \
 php-gd                                    \
 php-geoip                                 \
 php-iconv                                 \
@@ -108,8 +107,5 @@ ENV APACHE_RUN_DIR /var/run/apache2
 ENV APACHE_LOCK_DIR /var/lock/apache2
 
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
-
-RUN composer create-project --prefer-dist laravel/laravel /var/www/html/app
-RUN cd /var/www/html/app && composer update && composer install && composer dump
 
 EXPOSE 8081

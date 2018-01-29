@@ -1,7 +1,7 @@
 
 
-# DOCKER AMBIENTE DE DESENVOLVIMENTO MULTI-PLATAFORM #
-## Serviços PHP 7.1.11 /  Nginx 1.13.x + Phpmyadmin + Mysql-Server 5.7 + Redis + MongoDB
+# DOCKER FOR WINDOWS AMBIENTE DE DESENVOLVIMENTO#
+## Serviços PHP 7.1.11 /  Nginx 1.13.x + Phpmyadmin + Mysql-Server 5.7 + Redis
 
 Este script foi criado principalmente para rodar em ambientes Windows com VirtualBox, mas funciona normlamente em outras plataformas
 
@@ -11,7 +11,7 @@ Criamos uma estrutura de pastas a fim de facilitar o entendimento e desenvolvime
 
 | Pasta | Descrição |
 | ------ | ------ |
-| db |  Onde constam os arquivos de banco de dados do MySQL, para que ao subir as instâncias |
+| Dockerfile |  Arquivos de configuração dos pods docker |
 | dev | Pasta com os arquivos de desenvolvimento local dos arquivos clone do Git |
 | infra | Itens de configuração do dos serviços, como PHP.INI, VHOSTS e LOGS|
 | useful | Arquivos de Test e outros ajuda a mater a organização --LIXO-- |
@@ -68,11 +68,6 @@ Para ambientes Windows é necessário verificar qual ip da rede local esta atrib
 
 
 Após terminar o Build realize os testes e veja se seu ambiente esta funcionando.
-
-
-## Instalando Laravel
-
-Abra o console do docker e execute o comando abaixo na pasta raiz do docker
 
 
 > **Note:**

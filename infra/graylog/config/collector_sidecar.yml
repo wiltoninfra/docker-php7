@@ -1,0 +1,20 @@
+server_url: http://172.38.1.8:9000/api/
+update_interval: 30
+tls_skip_verify: true
+send_status: true
+list_log_files:
+  - /var/log
+node_id: graylog-collector-sidecar
+collector_id: file:/etc/graylog/collector-sidecar/collector-id
+log_path: /var/log/graylog/collector-sidecar
+log_rotation_time: 86400
+log_max_age: 604800
+tags:
+  - linux
+  - apache
+  - redis
+backends:
+    - name: nxlog
+      enabled: true
+      binary_path: /usr/bin/nxlog
+      configuration_path: /etc/graylog/collector-sidecar/generated/nxlog.conf

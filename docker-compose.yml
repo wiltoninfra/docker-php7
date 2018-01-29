@@ -1,10 +1,22 @@
 version: '3.2'
+
+# Criando Redes
+networks:
+  net-local:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      -
+        subnet: 172.38.1.0/24
+
 services:
+
 #- Serviço Banco de Dados
     mysql:                                      
       build: 
         context: .
-        dockerfile: Dockerfile-mysql           
+        dockerfile: ./Dockerfile/Dockerfile-mysql
       container_name: mysql
       environment:
         - MYSQL_ROOT_PASSWORD=123456
@@ -14,8 +26,16 @@ services:
       ports:
         - "3306:3306"
       volumes:
-        - "./db:/var/lib/mysql"
-#- Serviço Gerenciamento Banco de Dados PHP-MYADMIN      
+        - "./infra/mysql/db:/var/lib/mysql"
+      networks:
+        net-local:
+          ipv4_address: 172.38.1.2
+      extra_hosts:
+          - "app01.local:172.38.1.5"
+          - "app02.local:172.38.1.5"
+          - "app03.local:172.38.1.5"
+
+#- Serviço Gerenciamento Banco de Dados PHP-MYADMIN
     phpmyadmin:
       container_name: phpmyadmin
       image: phpmyadmin/phpmyadmin
@@ -26,14 +46,40 @@ services:
       restart: always
       ports:
        - "8080:80"
-#- Serviço de Cache de Memória       
+      networks:
+        net-local:
+          ipv4_address: 172.38.1.3
+      extra_hosts:
+          - "app01.local:172.38.1.5"
+          - "app02.local:172.38.1.5"
+          - "app03.local:172.38.1.5"
+
+#- Console de Comandos "artisan", "composer", "curl", "gulp", "bower" inclui serviço nodejs portas não configuradas.
+    comandos:
+      build:
+        context: .
+        dockerfile: Dockerfile/Dockerfile-comandos
+      container_name: comandos
+      volumes:
+       - "./dev:/var/www"
+      restart: always
+      networks:
+        net-local:
+          ipv4_address: 172.38.1.4
+      extra_hosts:
+          - "app01.local:172.38.1.5"
+          - "app02.local:172.38.1.5"
+          - "app03.local:172.38.1.5"
+
+#- Serviço de Cache de Memória
     redis:
       container_name: redis
       image: redis:alpine
       restart: always
       ports:
        - "6379:6379"
-#- Serviço Web Server (Nginx)         
+
+#- Serviço Web Server (Nginx)
     web:
       image: nginx:latest
       container_name: web
@@ -41,41 +87,41 @@ services:
         - mysql:mysql
         - redis:redis
         - php:php
-        - mongodb:mongodb
         #- rabbitmq:rabbitmq
+      environment:
+        XDEBUG_CONFIG: "remote_host=172.38.1.5"
+        PHP_IDE_CONFIG: "serverName=web"
       restart: always
       ports:
        - "80:80"
       volumes:
-       - "./dev:/var/www/html/"
+       - "./dev:/var/www"
        - "./infra/nginx/conf.d:/etc/nginx/conf.d"
-       - "./infra/nginx/conf.d:/etc/nginx/conf.d"
-#- Serviço MongoDB NoSQL
-    mongodb:
-      build: 
-        context: .
-        dockerfile: Dockerfile-mongodb
-      container_name: mongodb
-      ports:
-       - "27017:27017"
-      restart: always
+      networks:
+        net-local:
+          ipv4_address: 172.38.1.5
+      extra_hosts:
+          - "app01.local:172.38.1.5"
+          - "app02.local:172.38.1.5"
+          - "app03.local:172.38.1.5"
+
 #- Serviço de PHP-FPM 7
     php:
       build: 
         context: .
-        dockerfile: Dockerfile-phpfpm
+        dockerfile: Dockerfile/Dockerfile-phpfpm
       container_name: php    
       volumes:
-       - "./dev:/var/www/html/"
+       - "./dev:/var/www"
        - "./infra/php/php.ini:/usr/local/etc/php/php.ini"
       ports:
        - "9000:9000"
-#- Console de Comandos "artisan", "composer", "curl", "gulp", "bower" inclui serviço nodejs portas não configuradas.       
-    comandos:
-      build: 
-        context: .
-        dockerfile: Dockerfile-comandos
-      container_name: comandos  
-      volumes:
-       - "./dev:/var/www/html/"
-      restart: always 
+      networks:
+        net-local:
+          ipv4_address: 172.38.1.6
+      extra_hosts:
+          - "app01.local:172.38.1.5"
+          - "app02.local:172.38.1.5"
+          - "app03.local:172.38.1.5"
+
+
