@@ -31,9 +31,7 @@ services:
         net-local:
           ipv4_address: 172.38.1.2
       extra_hosts:
-          - "app01.local:172.38.1.5"
-          - "app02.local:172.38.1.5"
-          - "app03.local:172.38.1.5"
+          - "codeview.local:172.38.1.5"
 
 #- Serviço Gerenciamento Banco de Dados PHP-MYADMIN
     phpmyadmin:
@@ -50,9 +48,8 @@ services:
         net-local:
           ipv4_address: 172.38.1.3
       extra_hosts:
-          - "app01.local:172.38.1.5"
-          - "app02.local:172.38.1.5"
-          - "app03.local:172.38.1.5"
+          - "codeview.local:172.38.1.5"
+
 
 #- Console de Comandos "artisan", "composer", "curl", "gulp", "bower" inclui serviço nodejs portas não configuradas.
     comandos:
@@ -67,9 +64,7 @@ services:
         net-local:
           ipv4_address: 172.38.1.4
       extra_hosts:
-          - "app01.local:172.38.1.5"
-          - "app02.local:172.38.1.5"
-          - "app03.local:172.38.1.5"
+          - "codeview.local:172.38.1.5"
 
 #- Serviço de Cache de Memória
     redis:
@@ -101,9 +96,7 @@ services:
         net-local:
           ipv4_address: 172.38.1.5
       extra_hosts:
-          - "app01.local:172.38.1.5"
-          - "app02.local:172.38.1.5"
-          - "app03.local:172.38.1.5"
+          - "codeview.local:172.38.1.5"
 
 #- Serviço de PHP-FPM 7
     php:
@@ -120,8 +113,5 @@ services:
         net-local:
           ipv4_address: 172.38.1.6
       extra_hosts:
-          - "app01.local:172.38.1.5"
-          - "app02.local:172.38.1.5"
-          - "app03.local:172.38.1.5"
-
+          - "codeview.local:172.38.1.5"
 
