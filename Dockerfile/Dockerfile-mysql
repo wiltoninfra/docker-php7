@@ -1,7 +1,7 @@
 FROM  mysql:latest
 
 ADD ./infra/mysql/config/mysqld.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
-#RUN mysql -uroot -e "GRANT ALL ON *.* TO 'root'@'%' IDENTIFIED BY '123456';"
+
 
 EXPOSE 3306
 
